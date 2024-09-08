@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": "0810",
+      "product_name": "Wireless Headphones",
+      "price": 59.99,
+      "stock_quantity": 120,
+      "description": "Noise-cancelling wireless headphones with 20 hours of battery life."
+    },
+    {
+      "id": "f0f6",
+      "product_name": "Smartphone Case",
+      "price": 19.99,
+      "stock_quantity": 350,
+      "description": "Durable silicone case for iPhone 12, available in multiple colors."
+    },
+    {
+      "id": "42ce",
+      "product_name": "Gaming Mouse",
+      "price": 34.5,
+      "stock_quantity": 75,
+      "description": "Ergonomic gaming mouse with customizable buttons and RGB lighting."
+    },
+    {
+      "product_name": "Office chair",
+      "price": 39.99,
+      "stock_quantity": 10,
+      "description": "A chair that naturally adapts to the sitter, for people of different weights and heights.",
+      "id": "5f81"
+    }
+  ]
+}
