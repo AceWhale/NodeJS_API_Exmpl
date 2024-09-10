@@ -79,15 +79,17 @@
 // .then((data) => console.log(data))
 // .catch();
 
+const serverProductAPI = "http://localhost:3000/products"
+
 class DbService {
     Get(name){
         if(name != null)
-            fetch(`http://localhost:3000/products?product_name=${name}`).then(data => data.json()).then(res => console.table(res)).catch();
+            fetch(`${serverProductAPI}?product_name=${name}`).then(data => data.json()).then(res => console.table(res)).catch();
         else
-            fetch(`http://localhost:3000/products`).then(data => data.json()).then(res => console.table(res)).catch();
+            fetch(serverProductAPI).then(data => data.json()).then(res => console.table(res)).catch();
     }
     Post(){
-        fetch('http://localhost:3000/products', {
+        fetch(serverProductAPI, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,7 +106,7 @@ class DbService {
         .catch();
     }
     Put(id){
-        fetch(`http://localhost:3000/products/${id}`, {
+        fetch(`${serverProductAPI}/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -121,7 +123,7 @@ class DbService {
         .catch();
     }
     Delete(id){
-        fetch(`http://localhost:3000/products/${id}`, {
+        fetch(`${serverProductAPI}/${id}`, {
             method: 'DELETE',
         })
         .then(data => {
